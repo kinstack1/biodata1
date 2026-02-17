@@ -57,20 +57,11 @@
       object-fit: cover;
       border: 4px solid var(--pink-mid);
       box-shadow: 0 6px 24px rgba(214, 58, 122, 0.2);
+      transition: transform 0.3s ease;
     }
 
-    /* Placeholder if no real photo */
-    .profile-placeholder {
-      width: 140px;
-      height: 140px;
-      border-radius: 22px;
-      background: linear-gradient(135deg, var(--pink-mid), var(--green-soft));
-      border: 4px solid var(--pink-mid);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 56px;
-      box-shadow: 0 6px 24px rgba(214, 58, 122, 0.2);
+    .profile-img:hover {
+      transform: scale(1.05);
     }
 
     /* Name & title */
@@ -99,18 +90,14 @@
       font-weight: 500;
     }
 
-    /* Divider */
     .divider {
       height: 2px;
       background: linear-gradient(90deg, transparent, var(--pink-mid), transparent);
       margin: 0 0 28px;
     }
 
-    /* Sections */
     .section {
       margin-bottom: 28px;
-      animation: fadeUp 0.7s ease both;
-      animation-delay: 0.15s;
     }
 
     .section-title {
@@ -139,7 +126,6 @@
       line-height: 1.75;
     }
 
-    /* Skills chips */
     .chips {
       display: flex;
       flex-wrap: wrap;
@@ -155,7 +141,7 @@
       padding: 4px 14px;
       font-size: 0.83rem;
       font-weight: 500;
-      transition: background 0.2s;
+      transition: 0.2s;
     }
 
     .chip:hover {
@@ -163,7 +149,6 @@
       color: #fff;
     }
 
-    /* Contact row */
     .contact-row {
       display: flex;
       flex-wrap: wrap;
@@ -179,11 +164,6 @@
       color: var(--text-dark);
     }
 
-    .contact-item span.icon {
-      font-size: 1rem;
-    }
-
-    /* Footer */
     .footer {
       text-align: center;
       margin-top: 32px;
@@ -198,12 +178,9 @@
 
     <!-- Profile Photo -->
     <div class="profile-wrap">
-      <div class="profile-placeholder">🌸</div>
-      <!-- If you have a photo, replace the div above with:
-      <img class="profile-img" src="your-photo.jpg" alt="Charlyn Mae Tahil" /> -->
+      <img class="profile-img" src="images/charlyn.jpg" alt="Charlyn Mae Tahil">
     </div>
 
-    <!-- Name -->
     <h1 class="name">Charlyn Mae Tahil</h1>
     <div class="title-block">
       <strong>3rd Year Student</strong>
@@ -212,7 +189,6 @@
 
     <div class="divider"></div>
 
-    <!-- About Me -->
     <div class="section">
       <div class="section-title">About Me</div>
       <p>
@@ -220,16 +196,14 @@
       </p>
     </div>
 
-    <!-- Education -->
     <div class="section">
       <div class="section-title">Education</div>
       <p>
         <strong>University of Science and Technology of Southern Philippines</strong><br/>
-        Bachelor's Degree &nbsp;·&nbsp; 3rd Year &nbsp;·&nbsp; Present
+        Bachelor's Degree · 3rd Year · Present
       </p>
     </div>
 
-    <!-- Skills -->
     <div class="section">
       <div class="section-title">Skills</div>
       <div class="chips">
@@ -241,17 +215,17 @@
       </div>
     </div>
 
-    <!-- Contact -->
     <div class="section">
       <div class="section-title">Contact</div>
       <div class="contact-row">
-        <div class="contact-item"><span class="icon">📍</span> Southern Philippines</div>
-        <div class="contact-item"><span class="icon">🎓</span> USTP Student</div>
-        <div class="contact-item"><span class="icon">✉️</span> charlyn@email.com</div>
+        <div class="contact-item">📍 Southern Philippines</div>
+        <div class="contact-item">🎓 USTP Student</div>
+        <div class="contact-item">✉️ charlyn@email.com</div>
       </div>
     </div>
 
-    <div class="footer">Charlyn Mae Tahil &nbsp;·&nbsp; Personal Webpage</div>
+    <div class="footer">Charlyn Mae Tahil · Personal Webpage</div>
+
   </div>
 </body>
 </html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charlyn Mae | Personal Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --pink-light: #fce4ec;
+      --pink-mid: #f8b4c8;
+      --pink-deep: #d63a7a;
+      --green-light: #f0faf3;
+      --green-soft: #d4edd8;
+      --text-dark: #2d2d2d;
+      --text-muted: #6b6b6b;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(135deg, var(--pink-light) 0%, #fff5f8 40%, var(--green-light) 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: linear-gradient(160deg, #fffdf9 0%, var(--green-light) 100%);
+      border-radius: 32px;
+      max-width: 560px;
+      width: 100%;
+      padding: 48px 40px;
+      box-shadow: 0 8px 60px rgba(214, 58, 122, 0.12), 0 2px 20px rgba(0,0,0,0.06);
+      animation: fadeUp 0.7s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Profile image */
+    .profile-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 22px;
+      object-fit: cover;
+      border: 4px solid var(--pink-mid);
+      box-shadow: 0 6px 24px rgba(214, 58, 122, 0.2);
+    }
+
+    /* Placeholder if no real photo */
+    .profile-placeholder {
+      width: 140px;
+      height: 140px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, var(--pink-mid), var(--green-soft));
+      border: 4px solid var(--pink-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 56px;
+      box-shadow: 0 6px 24px rgba(214, 58, 122, 0.2);
+    }
+
+    /* Name & title */
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--pink-deep);
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 6px;
+    }
+
+    .title-block {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .title-block strong {
+      display: block;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    /* Divider */
+    .divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--pink-mid), transparent);
+      margin: 0 0 28px;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 28px;
+      animation: fadeUp 0.7s ease both;
+      animation-delay: 0.15s;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--pink-deep);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--pink-deep);
+      border-radius: 2px;
+    }
+
+    .section p {
+      color: var(--text-dark);
+      font-size: 0.93rem;
+      line-height: 1.75;
+    }
+
+    /* Skills chips */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .chip {
+      background: var(--pink-light);
+      color: var(--pink-deep);
+      border: 1.5px solid var(--pink-mid);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 0.83rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .chip:hover {
+      background: var(--pink-mid);
+      color: #fff;
+    }
+
+    /* Contact row */
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-dark);
+    }
+
+    .contact-item span.icon {
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <!-- Profile Photo -->
+    <div class="profile-wrap">
+      <div class="profile-placeholder">🌸</div>
+      <!-- If you have a photo, replace the div above with:
+      <img class="profile-img" src="your-photo.jpg" alt="Charlyn Mae Tahil" /> -->
+    </div>
+
+    <!-- Name -->
+    <h1 class="name">Charlyn Mae Tahil</h1>
+    <div class="title-block">
+      <strong>3rd Year Student</strong>
+      University of Science and Technology<br/>of Southern Philippines
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- About Me -->
+    <div class="section">
+      <div class="section-title">About Me</div>
+      <p>
+        I am a 3rd year college student studying technology and passionate about learning, growth, and making meaningful contributions through my field of study.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <p>
+        <strong>University of Science and Technology of Southern Philippines</strong><br/>
+        Bachelor's Degree &nbsp;·&nbsp; 3rd Year &nbsp;·&nbsp; Present
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="chips">
+        <span class="chip">HTML & CSS</span>
+        <span class="chip">Web Design</span>
+        <span class="chip">Problem Solving</span>
+        <span class="chip">Communication</span>
+        <span class="chip">Teamwork</span>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+      <div class="section-title">Contact</div>
+      <div class="contact-row">
+        <div class="contact-item"><span class="icon">📍</span> Southern Philippines</div>
+        <div class="contact-item"><span class="icon">🎓</span> USTP Student</div>
+        <div class="contact-item"><span class="icon">✉️</span> charlyn@email.com</div>
+      </div>
+    </div>
+
+    <div class="footer">Charlyn Mae Tahil &nbsp;·&nbsp; Personal Webpage</div>
+  </div>
+</body>
+</html>

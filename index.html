@@ -77,17 +77,11 @@
       margin-bottom: 8px;
     }
 
-    .title-block {
+    .subtitle {
       text-align: center;
+      font-size: 0.9rem;
       color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
-    .title-block strong {
-      display: block;
-      color: var(--text-dark);
+      margin-bottom: 25px;
     }
 
     .divider {
@@ -113,6 +107,12 @@
       font-size: 0.92rem;
       color: var(--text-dark);
       line-height: 1.7;
+    }
+
+    .info-line {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+      color: var(--text-dark);
     }
 
     .chips {
@@ -145,13 +145,6 @@
       font-size: 0.88rem;
     }
 
-    .footer {
-      text-align: center;
-      margin-top: 35px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
-
     @media (max-width: 600px) {
       .card {
         padding: 35px 25px;
@@ -165,36 +158,45 @@
   <div class="card">
 
     <div class="profile-wrap">
-      <!-- GitHub-friendly image path -->
       <img src="images/prof.jpg" alt="Charlyn Mae Tahil" class="profile-img">
     </div>
 
     <h1 class="name">Charlyn Mae Tahil</h1>
-
-    <div class="title-block">
-      <strong>3rd Year Student</strong>
-      University of Science and Technology<br>
-      of Southern Philippines
+    <div class="subtitle">
+      Bachelor of Science in Information Technology · 3rd Year Student
     </div>
 
     <div class="divider"></div>
 
+    <!-- Personal Information -->
+    <div class="section">
+      <div class="section-title">Personal Information</div>
+      <div class="info-line"><strong>Full Name:</strong> Charlyn Mae Tahil</div>
+      <div class="info-line"><strong>Course:</strong> Bachelor of Science in Information Technology</div>
+      <div class="info-line"><strong>Year Level:</strong> 3rd Year</div>
+    </div>
+
+    <!-- About Me -->
     <div class="section">
       <div class="section-title">About Me</div>
       <p>
-        I am a 3rd year college student passionate about technology, continuous learning,
-        and contributing meaningfully through my field of study.
+        I am a dedicated 3rd year Bachelor of Science in Information Technology student 
+        who is passionate about technology and continuous learning. I strive to improve 
+        my technical and personal skills while contributing meaningfully to academic 
+        and future professional environments.
       </p>
     </div>
 
+    <!-- Education -->
     <div class="section">
       <div class="section-title">Education</div>
       <p>
         <strong>University of Science and Technology of Southern Philippines</strong><br>
-        Bachelor's Degree · 3rd Year · Present
+        Bachelor of Science in Information Technology · Present
       </p>
     </div>
 
+    <!-- Skills -->
     <div class="section">
       <div class="section-title">Skills</div>
       <div class="chips">
@@ -206,6 +208,7 @@
       </div>
     </div>
 
+    <!-- Contact -->
     <div class="section">
       <div class="section-title">Contact</div>
       <div class="contact-row">
@@ -213,10 +216,6 @@
         🎓 USTP Student  
         ✉️ charlyn@email.com
       </div>
-    </div>
-
-    <div class="footer">
-      © 2026 Charlyn Mae Tahil · Personal Webpage
     </div>
 
   </div>
